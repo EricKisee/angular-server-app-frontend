@@ -58,7 +58,7 @@ export class ServerService {
 
   private handleError(error:HttpErrorResponse):Observable<never>{
     console.log(error);
-    return throwError('An error occured - Error code: ${error.status}');
+    return throwError(`An error occured - Error code: ${error.status}`);
   }
 
 }
